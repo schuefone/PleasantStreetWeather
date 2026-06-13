@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pleasant Street Weather</title>
+  <meta http-equiv="refresh" content="300" />
+  <style>
+    :root {
+      --bg: #eef2f7;
+      --surface: #ffffff;
+      --ink: #152238;
+      --muted: #4f6075;
+      --accent: #146e8f;
+      --accent-2: #0fa36b;
+      --border: #cfdae6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at top right, #dceaf4, var(--bg) 55%);
+    }
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1.2rem;
+    }
+    header {
+      background: linear-gradient(120deg, var(--accent), var(--accent-2));
+      color: white;
+      border-radius: 14px;
+      padding: 1.2rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+    header h1 { margin: 0 0 0.35rem; font-size: 1.65rem; }
+    header p { margin: 0.15rem 0; opacity: 0.95; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.9rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.9rem;
+    }
+    .card h2 {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .card p {
+      margin: 0.4rem 0 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .panel {
+      margin-top: 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .panel h2 {
+      margin: 0;
+      padding: 0.8rem 0.9rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 1rem;
+    }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td {
+      text-align: left;
+      padding: 0.6rem 0.9rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.92rem;
+    }
+    th { color: var(--muted); font-weight: 600; }
+    footer {
+      color: var(--muted);
+      margin-top: 0.85rem;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Pleasant Street Weather</h1>
+      <p>Station: Pleasant Street Outdoor Sensor</p>
+      <p>Sensor: Acurite-5n1 / ID 1466 / Channel C</p>
+      <p>Last packet: 2026-06-13T19:37:28 (stale minutes: 0)</p>
+      <p>Page generated: 2026-06-13T12:37:31</p>
+    </header>
+
+    <section class="grid">
+      <article class="card"><h2>Temperature</h2><p>86.4 F / -- C</p></article>
+<article class="card"><h2>Humidity</h2><p>31.0 %</p></article>
+<article class="card"><h2>Wind</h2><p>1.6 mph / -- km/h</p></article>
+<article class="card"><h2>Wind Direction</h2><p>270.0 deg (W)</p></article>
+<article class="card"><h2>Rain Total</h2><p>52.93 in / -- mm</p></article>
+<article class="card"><h2>Battery</h2><p>LOW</p></article>
+    </section>
+
+    <section class="panel">
+      <h2>Recent Observations</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Observed</th>
+              <th>Type</th>
+              <th>Temp F</th>
+              <th>Humidity %</th>
+              <th>Wind mph</th>
+              <th>Direction deg</th>
+              <th>Rain in</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2026-06-13T19:37:28</td><td>49</td><td>--</td><td>--</td><td>1.6</td><td>270.0</td><td>52.93</td></tr><tr><td>2026-06-13T19:37:09</td><td>56</td><td>86.4</td><td>31.0</td><td>1.6</td><td>--</td><td>--</td></tr><tr><td>2026-06-13T19:36:50</td><td>49</td><td>--</td><td>--</td><td>2.7</td><td>270.0</td><td>52.93</td></tr><tr><td>2026-06-13T19:36:31</td><td>56</td><td>86.2</td><td>30.0</td><td>2.2</td><td>--</td><td>--</td></tr><tr><td>2026-06-13T19:36:13</td><td>49</td><td>--</td><td>--</td><td>1.6</td><td>22.5</td><td>52.93</td></tr><tr><td>2026-06-13T19:35:54</td><td>56</td><td>86.5</td><td>31.0</td><td>2.7</td><td>--</td><td>--</td></tr><tr><td>2026-06-13T19:35:35</td><td>49</td><td>--</td><td>--</td><td>4.2</td><td>22.5</td><td>52.93</td></tr><tr><td>2026-06-13T19:35:16</td><td>56</td><td>86.4</td><td>30.0</td><td>3.2</td><td>--</td><td>--</td></tr><tr><td>2026-06-13T19:34:58</td><td>49</td><td>--</td><td>--</td><td>3.7</td><td>315.0</td><td>52.93</td></tr><tr><td>2026-06-13T19:34:39</td><td>56</td><td>85.8</td><td>30.0</td><td>3.7</td><td>--</td><td>--</td></tr><tr><td>2026-06-13T19:34:20</td><td>49</td><td>--</td><td>--</td><td>2.2</td><td>292.5</td><td>52.93</td></tr><tr><td>2026-06-13T19:34:01</td><td>56</td><td>85.6</td><td>31.0</td><td>2.7</td><td>--</td><td>--</td></tr><tr><td>2026-06-13T19:33:43</td><td>49</td><td>--</td><td>--</td><td>3.2</td><td>45.0</td><td>52.93</td></tr><tr><td>2026-06-13T19:33:24</td><td>56</td><td>85.5</td><td>30.0</td><td>1.6</td><td>--</td><td>--</td></tr><tr><td>2026-06-13T19:33:05</td><td>49</td><td>--</td><td>--</td><td>1.6</td><td>270.0</td><td>52.93</td></tr><tr><td>2026-06-13T19:32:46</td><td>56</td><td>85.5</td><td>31.0</td><td>2.2</td><td>--</td><td>--</td></tr><tr><td>2026-06-13T19:32:28</td><td>49</td><td>--</td><td>--</td><td>1.6</td><td>270.0</td><td>52.93</td></tr><tr><td>2026-06-13T19:32:09</td><td>56</td><td>85.5</td><td>31.0</td><td>3.2</td><td>--</td><td>--</td></tr><tr><td>2026-06-13T19:31:50</td><td>49</td><td>--</td><td>--</td><td>4.7</td><td>0.0</td><td>52.93</td></tr><tr><td>2026-06-13T19:31:31</td><td>56</td><td>84.9</td><td>31.0</td><td>6.3</td><td>--</td><td>--</td></tr><tr><td>2026-06-13T19:31:13</td><td>49</td><td>--</td><td>--</td><td>1.6</td><td>337.5</td><td>52.93</td></tr><tr><td>2026-06-13T19:30:54</td><td>56</td><td>84.9</td><td>31.0</td><td>1.6</td><td>--</td><td>--</td></tr><tr><td>2026-06-13T19:30:35</td><td>49</td><td>--</td><td>--</td><td>2.7</td><td>180.0</td><td>52.93</td></tr><tr><td>2026-06-13T19:30:16</td><td>56</td><td>85.1</td><td>30.0</td><td>2.2</td><td>--</td><td>--</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      Auto-refresh is enabled every 5 minutes. Data source: weather_observations table.
+    </footer>
+  </main>
+</body>
+</html>
