@@ -388,7 +388,7 @@
   "snapshot": {
     "battery_ok": 1,
     "channel": "C",
-    "generated_at": "2026-06-15 20:37:54 PDT",
+    "generated_at": "2026-06-15 20:41:36 PDT",
     "humidity": 45.0,
     "message_type": "49",
     "model": "Acurite-5n1",
@@ -398,7 +398,7 @@
     "rain_mm": null,
     "rain_ytd_in": 0.0,
     "sensor_id": "1466",
-    "stale_minutes": 3,
+    "stale_minutes": 6,
     "temperature_c": null,
     "temperature_f": 81.1,
     "wind_avg_km_h": null,
