@@ -15,22 +15,18 @@
       --accent-2: #0fa36b;
       --border: #cfdae6;
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       font-family: "Segoe UI", "Trebuchet MS", sans-serif;
       color: var(--ink);
       background: radial-gradient(circle at top right, #dceaf4, var(--bg) 55%);
     }
-
     .wrap {
       max-width: 1000px;
       margin: 0 auto;
       padding: 1.2rem;
     }
-
     header {
       background: linear-gradient(120deg, var(--accent), var(--accent-2));
       color: white;
@@ -38,24 +34,20 @@
       padding: 1.2rem;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     }
-
     header h1 { margin: 0 0 0.35rem; font-size: 1.65rem; }
     header p { margin: 0.15rem 0; opacity: 0.95; }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 0.9rem;
       margin-top: 1rem;
     }
-
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 0.9rem;
     }
-
     .card h2 {
       margin: 0;
       font-size: 0.9rem;
@@ -63,13 +55,11 @@
       text-transform: uppercase;
       letter-spacing: 0.06em;
     }
-
     .card p {
       margin: 0.4rem 0 0;
       font-size: 1.2rem;
       font-weight: 600;
     }
-
     .panel {
       margin-top: 1rem;
       background: var(--surface);
@@ -77,26 +67,21 @@
       border-radius: 12px;
       overflow: hidden;
     }
-
     .panel h2 {
       margin: 0;
       padding: 0.8rem 0.9rem;
       border-bottom: 1px solid var(--border);
       font-size: 1rem;
     }
-
     .table-wrap { overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; }
-
     th, td {
       text-align: left;
       padding: 0.6rem 0.9rem;
       border-bottom: 1px solid var(--border);
       font-size: 0.92rem;
     }
-
     th { color: var(--muted); font-weight: 600; }
-
     footer {
       color: var(--muted);
       margin-top: 0.85rem;
@@ -110,19 +95,19 @@
       <h1>Pleasant Street Weather</h1>
       <p>Station: Pleasant Street Outdoor Sensor</p>
       <p>Sensor: Acurite-5n1 / ID 1466 / Channel C</p>
-      <p id="last-packet">Last packet: --</p>
-      <p id="page-generated">Page generated: --</p>
+      <p>Last packet: 2026-07-04 14:22:26 PDT (stale minutes: 1)</p>
+      <p>Page generated: 2026-07-04 14:24:20 PDT</p>
     </header>
 
     <section class="grid">
-      <article class="card"><h2>Temperature</h2><p id="card-temperature">-- F / -- C</p></article>
-      <article class="card"><h2>Humidity</h2><p id="card-humidity">-- %</p></article>
-      <article class="card"><h2>Wind</h2><p id="card-wind">-- mph / -- km/h</p></article>
-      <article class="card"><h2>Wind Direction</h2><p id="card-direction">-- deg (--)</p></article>
-      <article class="card"><h2>Rain Today</h2><p id="card-rain-day">-- in</p></article>
-      <article class="card"><h2>Rain YTD</h2><p id="card-rain-ytd">-- in</p></article>
-      <article class="card"><h2>Rain Counter</h2><p id="card-rain-counter">-- in / -- mm</p></article>
-      <article class="card"><h2>Battery</h2><p id="card-battery">--</p></article>
+      <article class="card"><h2>Temperature</h2><p>93.9 F / -- C</p></article>
+<article class="card"><h2>Humidity</h2><p>19.0 %</p></article>
+<article class="card"><h2>Wind</h2><p>6.8 mph / -- km/h</p></article>
+<article class="card"><h2>Wind Direction</h2><p>225.0 deg (SW)</p></article>
+<article class="card"><h2>Rain Today</h2><p>0.00 in</p></article>
+<article class="card"><h2>Rain YTD</h2><p>8.18 in</p></article>
+<article class="card"><h2>Rain Counter</h2><p>0.51 in / -- mm</p></article>
+<article class="card"><h2>Battery</h2><p>OK</p></article>
     </section>
 
     <section class="panel">
@@ -136,110 +121,20 @@
               <th>Humidity %</th>
               <th>Wind mph</th>
               <th>Direction deg</th>
-              <th>Rain Day in</th>
-              <th>Rain YTD in</th>
+                            <th>Rain Day in</th>
+                            <th>Rain YTD in</th>
             </tr>
           </thead>
-          <tbody id="recent-table-body"></tbody>
+          <tbody>
+                        <tr><td>2026-07-04 14:22:26 PDT</td><td>93.9</td><td>19.0</td><td>6.8</td><td>225.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 14:17:26 PDT</td><td>94.1</td><td>19.0</td><td>2.7</td><td>315.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 14:12:26 PDT</td><td>93.6</td><td>19.0</td><td>3.7</td><td>45.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 14:07:26 PDT</td><td>93.2</td><td>20.0</td><td>2.7</td><td>135.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 14:02:26 PDT</td><td>93.7</td><td>20.0</td><td>2.7</td><td>225.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 13:57:26 PDT</td><td>92.8</td><td>20.0</td><td>4.2</td><td>202.5</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 13:52:26 PDT</td><td>93.2</td><td>17.0</td><td>4.2</td><td>225.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 13:47:26 PDT</td><td>93.2</td><td>21.0</td><td>2.7</td><td>225.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 13:42:26 PDT</td><td>91.8</td><td>19.0</td><td>3.2</td><td>247.5</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 13:37:26 PDT</td><td>93.4</td><td>18.0</td><td>6.3</td><td>202.5</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 13:32:26 PDT</td><td>92.1</td><td>20.0</td><td>3.7</td><td>247.5</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 13:27:26 PDT</td><td>93.0</td><td>22.0</td><td>2.7</td><td>225.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 13:22:26 PDT</td><td>92.8</td><td>20.0</td><td>4.2</td><td>247.5</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 13:17:26 PDT</td><td>91.9</td><td>21.0</td><td>3.2</td><td>270.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 13:12:26 PDT</td><td>91.6</td><td>22.0</td><td>5.3</td><td>0.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 13:07:26 PDT</td><td>91.2</td><td>22.0</td><td>3.2</td><td>202.5</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 13:02:26 PDT</td><td>91.4</td><td>23.0</td><td>1.6</td><td>135.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 12:57:26 PDT</td><td>91.4</td><td>23.0</td><td>2.2</td><td>270.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 12:52:26 PDT</td><td>90.0</td><td>24.0</td><td>4.2</td><td>157.5</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 12:47:26 PDT</td><td>90.0</td><td>26.0</td><td>4.7</td><td>225.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 12:42:26 PDT</td><td>89.2</td><td>27.0</td><td>3.7</td><td>90.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 12:37:26 PDT</td><td>88.9</td><td>27.0</td><td>2.7</td><td>270.0</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 12:32:26 PDT</td><td>89.4</td><td>28.0</td><td>2.7</td><td>202.5</td><td>0.00</td><td>8.18</td></tr><tr><td>2026-07-04 12:27:26 PDT</td><td>89.2</td><td>27.0</td><td>6.3</td><td>202.5</td><td>0.00</td><td>8.18</td></tr>
+          </tbody>
         </table>
       </div>
     </section>
 
     <footer>
-      Auto-refresh is enabled every 5 minutes. Data source: preferred weather_snapshots table with fallback to weather_observations.
+            Auto-refresh is enabled every 5 minutes. Data source: preferred weather_snapshots table with fallback to weather_observations.
     </footer>
   </main>
-
-  <script>
-    function formatNumber(value, digits) {
-      if (value === null || value === undefined || Number.isNaN(Number(value))) {
-        return "--";
-      }
-      return Number(value).toFixed(digits);
-    }
-
-    function directionLabel(deg) {
-      if (deg === null || deg === undefined || Number.isNaN(Number(deg))) {
-        return "--";
-      }
-      var labels = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
-      var normalized = ((Number(deg) % 360) + 360) % 360;
-      var index = Math.round(normalized / 22.5) % 16;
-      return labels[index];
-    }
-
-    function setText(id, value) {
-      var el = document.getElementById(id);
-      if (el) {
-        el.textContent = value;
-      }
-    }
-
-    function renderSnapshot(snapshot) {
-      if (!snapshot) {
-        return;
-      }
-
-      var stale = snapshot.stale_minutes === null || snapshot.stale_minutes === undefined
-        ? "--"
-        : String(snapshot.stale_minutes);
-
-      setText("last-packet", "Last packet: " + (snapshot.observed_at || "--") + " (stale minutes: " + stale + ")");
-      setText("page-generated", "Page generated: " + (snapshot.generated_at || "--"));
-      setText("card-temperature", formatNumber(snapshot.temperature_f, 1) + " F / " + formatNumber(snapshot.temperature_c, 1) + " C");
-      setText("card-humidity", formatNumber(snapshot.humidity, 1) + " %");
-      setText("card-wind", formatNumber(snapshot.wind_avg_mi_h, 1) + " mph / " + formatNumber(snapshot.wind_avg_km_h, 1) + " km/h");
-      setText("card-direction", formatNumber(snapshot.wind_dir_deg, 1) + " deg (" + directionLabel(snapshot.wind_dir_deg) + ")");
-      setText("card-rain-day", formatNumber(snapshot.rain_day_in, 2) + " in");
-      setText("card-rain-ytd", formatNumber(snapshot.rain_ytd_in, 2) + " in");
-      setText("card-rain-counter", formatNumber(snapshot.rain_in, 2) + " in / " + formatNumber(snapshot.rain_mm, 1) + " mm");
-      setText("card-battery", snapshot.battery_ok === 1 ? "OK" : "LOW");
-    }
-
-    function renderRecent(recent) {
-      var tbody = document.getElementById("recent-table-body");
-      if (!tbody) {
-        return;
-      }
-
-      tbody.innerHTML = "";
-      if (!Array.isArray(recent) || recent.length === 0) {
-        tbody.innerHTML = "<tr><td colspan=\"7\">No observations available.</td></tr>";
-        return;
-      }
-
-      recent.forEach(function (row) {
-        var tr = document.createElement("tr");
-        tr.innerHTML = ""
-          + "<td>" + (row.observed_at || "--") + "</td>"
-          + "<td>" + formatNumber(row.temperature_f, 1) + "</td>"
-          + "<td>" + formatNumber(row.humidity, 1) + "</td>"
-          + "<td>" + formatNumber(row.wind_avg_mi_h, 1) + "</td>"
-          + "<td>" + formatNumber(row.wind_dir_deg, 1) + "</td>"
-          + "<td>" + formatNumber(row.rain_day_in, 2) + "</td>"
-          + "<td>" + formatNumber(row.rain_ytd_in, 2) + "</td>";
-        tbody.appendChild(tr);
-      });
-    }
-
-    async function loadWeather() {
-      try {
-        var response = await fetch("data.json?ts=" + Date.now(), { cache: "no-store" });
-        if (!response.ok) {
-          throw new Error("HTTP " + response.status);
-        }
-        var payload = await response.json();
-        renderSnapshot(payload.snapshot || null);
-        renderRecent(payload.recent || []);
-      } catch (error) {
-        var tbody = document.getElementById("recent-table-body");
-        if (tbody) {
-          tbody.innerHTML = "<tr><td colspan=\"7\">Unable to load data.json. Last values may be stale.</td></tr>";
-        }
-      }
-    }
-
-    loadWeather();
-  </script>
 </body>
 </html>
